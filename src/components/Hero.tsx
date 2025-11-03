@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import bandanaPortrait from "@/assets/bandana-portrait.jpg";
+import bandanaPortrait from "@/assets/bandana-profile.png";
 
 const Hero = () => {
   const scrollToContact = () => {
