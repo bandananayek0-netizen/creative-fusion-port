@@ -6,12 +6,12 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Resume", href: "/Bandana_Resume.pdf" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", isLink: false },
+    { name: "About", href: "#about", isLink: false },
+    { name: "Services", href: "#services", isLink: false },
+    { name: "Resume", href: "/Bandana_Resume.pdf", isLink: true },
+    { name: "Projects", href: "#projects", isLink: false },
+    { name: "Contact", href: "#contact", isLink: false },
   ];
 
   const scrollToSection = (href: string) => {
@@ -32,7 +32,14 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {navLinks.map((link) => {
+              return link.isLink ? 
+              <a 
+                className="text-foreground hover:text-primary transition-colors duration-300 font-medium" 
+                download 
+                href={link.href}>
+                  {link.name}
+              </a> : 
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
@@ -40,7 +47,7 @@ const Navigation = () => {
               >
                 {link.name}
               </button>
-            ))}
+            })}
           </div>
 
           {/* Mobile Menu Button */}
@@ -58,15 +65,22 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 animate-fade-in">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <button
-                  key={link.name}
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left"
-                >
+            {navLinks.map((link) => {
+              return link.isLink ? 
+              <a 
+                className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left" 
+                download 
+                href={link.href}>
                   {link.name}
-                </button>
-              ))}
+              </a> : 
+              <button
+                key={link.name}
+                onClick={() => scrollToSection(link.href)}
+                className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left"
+              >
+                {link.name}
+              </button>
+            })}
             </div>
           </div>
         )}
