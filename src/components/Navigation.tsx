@@ -9,7 +9,7 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Resume", href: "#resume" },
+    { name: "Resume", href: "/Bandana_Resume.pdf" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
