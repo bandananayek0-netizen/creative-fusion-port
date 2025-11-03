@@ -34,8 +34,8 @@ const Contact = () => {
     {
       icon: Globe,
       label: "Behance",
-      value: "behance.net/bandanayek",
-      href: "https://behance.net/bandanayek"
+      value: "behance.net/bandananayek",
+      href: "https://behance.net/bandananayek"
     }
   ];
 
