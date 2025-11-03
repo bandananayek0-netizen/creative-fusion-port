@@ -36,7 +36,7 @@ const Navigation = () => {
               return link.isLink ? 
               <a 
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium" 
-                download 
+              
                 href={link.href}>
                   {link.name}
               </a> : 
@@ -69,7 +69,7 @@ const Navigation = () => {
               return link.isLink ? 
               <a 
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left" 
-                download 
+               
                 href={link.href}>
                   {link.name}
               </a> : 
