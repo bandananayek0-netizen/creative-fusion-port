@@ -8,7 +8,7 @@ const Navigation = () => {
   const navLinks = [
     { name: "Home", href: "#home", isLink: false },
     { name: "About", href: "#about", isLink: false },
-    { name: "Services", href: "#services", isLink: false },
+    { name: "sjuhff", href: "#services", isLink: false },
     { name: "Resume", href: "/Bandana_Resume.pdf", isLink: true },
     { name: "Projects", href: "#projects", isLink: false },
     { name: "Contact", href: "#contact", isLink: false },
