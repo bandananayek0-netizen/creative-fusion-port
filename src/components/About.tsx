@@ -5,7 +5,7 @@ const About = () => {
     {
       icon: Sparkles,
       title: "Career Transition",
-      description: "From 3D Animation to UI/UX Design"
+      description: "From 3D Animation to UI/UX and Product Designer"
     },
     {
       icon: Code,
@@ -27,7 +27,7 @@ const About = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto animate-fade-in">
-            I'm Bandana Nayek, a UI/UX Designer who transitioned from a background in 3D animation. 
+            I'm Bandana Nayek, a UI/UX and Product Designer who transitioned from a background in 3D animation. 
             My experience in storytelling and visual design helps me craft interfaces that are both 
             visually engaging and effortless to use. I'm passionate about turning ideas into thoughtful 
             digital experiences that blend creativity with purpose.
