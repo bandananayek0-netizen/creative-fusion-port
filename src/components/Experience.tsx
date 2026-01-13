@@ -71,7 +71,7 @@ const Experience = () => {
         </h2>
         
         <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-          UI/UX and Product Designer transitioning from a professional 3D animation background, with years of experience in motion, storytelling, composition, and timing. I apply this understanding to design intuitive, user-centered products, combining research, interaction design, and visual clarity to solve complex problems meaningfully.
+          UI/UX and Product Designer with a background in 3D animation, bringing strengths in storytelling, motion, and visual composition to user-centered design.
         </p>
 
         <div className="max-w-5xl mx-auto space-y-12">
