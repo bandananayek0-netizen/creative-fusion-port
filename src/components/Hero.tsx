@@ -28,7 +28,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               I'm Bandana,
               <br />
-              <span className="text-primary">UI UX Designer</span>
+              <span className="text-primary">UI/UX and Product Designer</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
               I design simple, thoughtful digital experiences that blend creativity with purpose.
