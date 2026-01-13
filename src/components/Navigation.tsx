@@ -35,10 +35,13 @@ const Navigation = () => {
             {navLinks.map((link) => {
               return link.isLink ? 
               <a 
+                key={link.name}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium" 
-              
-                href={link.href}>
-                  {link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.name}
               </a> : 
               <button
                 key={link.name}
@@ -68,10 +71,13 @@ const Navigation = () => {
             {navLinks.map((link) => {
               return link.isLink ? 
               <a 
+                key={link.name}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left" 
-               
-                href={link.href}>
-                  {link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.name}
               </a> : 
               <button
                 key={link.name}
