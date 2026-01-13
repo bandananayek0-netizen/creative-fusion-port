@@ -1,23 +1,6 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Globe } from "lucide-react";
-import { toast } from "sonner";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   const socialLinks = [
     {
       icon: Mail,
@@ -34,8 +17,8 @@ const Contact = () => {
     {
       icon: Globe,
       label: "Behance",
-      value: "behance.net/bandananayek",
-      href: "https://behance.net/bandananayek"
+      value: "behance.net/bandanauxdesign",
+      href: "https://www.behance.net/bandanauxdesign"
     }
   ];
 
@@ -50,61 +33,9 @@ const Contact = () => {
           Have an awesome project idea? Let's discuss and bring it to life!
         </p>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div className="glass-card p-8 animate-fade-in">
-            <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Your Name
-                </label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="John Doe"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="bg-background/50"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Your Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="john@example.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="bg-background/50"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Your Message
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell me about your project..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                  rows={5}
-                  className="bg-background/50"
-                />
-              </div>
-              <Button type="submit" variant="default" size="lg" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </div>
-
+        <div className="max-w-2xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <div className="space-y-6 animate-fade-in">
             <div className="glass-card p-8">
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <div className="space-y-6">
