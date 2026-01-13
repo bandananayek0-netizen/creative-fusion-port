@@ -2,20 +2,21 @@ import { Briefcase, Code, GraduationCap, Globe, Lightbulb } from "lucide-react";
 
 const Experience = () => {
   const skills = {
-    uxui: ["User Research", "Wireframing", "Prototyping", "Design Systems", "UI Design", "Data-driven UI Design", "Responsive Design", "Design Thinking"],
-    tools: ["Figma", "Adobe XD", "Sketch", "Canva", "Adobe Photoshop", "Autodesk Maya", "Blender", "Flash", "HTML/CSS Basics"]
+    uxui: ["UX Research & Strategy", "Wireframing & Prototyping", "Interaction & Visual Design", "Usability Testing & Iteration", "Design Systems & Accessibility", "Web & Mobile App Design"],
+    tools: ["Figma", "Adobe Photoshop", "Blender 3D", "Autodesk Maya", "Canva", "GitHub Copilot (GenAI)", "Lovable (GenAI)", "Lottie files", "Relume AI"]
   };
 
   const projects = [
     {
-      title: "EASEOUT - Toilet Finder App",
-      role: "UI/UX Designer",
-      period: "Present",
+      title: "EaseOut - Toilet Finder App",
+      role: "Product Designer",
+      period: "Sep 2025 - Nov 2025",
       description: [
-        "Designed EaseOut, a mobile application to help users quickly locate clean, accessible toilets, complete with hygiene ratings and photos.",
-        "Conducted primary user research, wireframing, and high-fidelity UI design using Figma.",
-        "Applied design thinking methodologies to solve real-world challenges in hygiene and accessibility through thoughtful design.",
-        "Focused on creating adaptable design systems for multi-screen and mobile application interfaces."
+        "Designed a complete mobile experience from UX research to high-fidelity prototype.",
+        "Conducted user interviews to identify pain points around urgency, accessibility, and hygiene.",
+        "Created user flows, wireframes, and a minimalist design system tailored for a public-utility service app.",
+        "Designed intuitive UI screens optimized for quick scanning and real-time decision-making.",
+        "Built interactive prototypes and conducted usability testing to refine user flow and reduce task friction."
       ]
     }
   ];
@@ -23,35 +24,42 @@ const Experience = () => {
   const experiences = [
     {
       title: "Junior 3D Animator",
-      company: "Xentrix Studios (Nickelodeon Wing)",
-      period: "May 2022 – Apr 2024",
+      company: "Xentrix Studios (Nickelodeon Wing), Bangalore",
+      period: "May 2022 - Apr 2024",
+      projects: "Monster High, Stan & Gran",
       description: [
-        "Collaborated with directors on the international animation project, Monster High (Nickelodeon), ensuring strong visual quality and consistent storytelling for a teenage audience.",
-        "Developed a strong sense of motion flow, visual hierarchy, and composition—essential skills now applied to creating seamless and engaging digital interfaces."
+        "Strengthened skills in high-detail, polished, and dynamic 3D animation for global broadcast standards.",
+        "Worked on Nickelodeon IPs with strict visual quality, timing, and storytelling guidelines.",
+        "Enhanced character acting, emotional performance, and movement realism.",
+        "Collaborated closely with supervisors to refine animation quality and maintain production pipeline consistency."
       ]
     },
     {
       title: "Junior 3D Animator",
-      company: "BYJU'S Pvt. Ltd.",
-      period: "Mar 2019 – Apr 2022",
+      company: "BYJU'S Pvt. Ltd., Bhubaneswar",
+      period: "Dec 2019 - May 2022",
+      projects: "Internal Projects",
       description: [
-        "Leveraged visual storytelling and compositional balance to simplify complex educational concepts, directly enhancing user perception and engagement for a child audience.",
-        "Created and produced engaging educational animations specifically for children, partnering with creative teams to ensure the content strongly connected with the target student audience."
+        "Produced 3D animations specifically for primary school children, focusing on engagement and clarity.",
+        "Transformed complex educational topics into simple, visually appealing content.",
+        "Delivered animations optimized for mobile and web-based learning experiences."
       ]
     },
     {
-      title: "3D Animator Trainee",
-      company: "Giantwheel Animation Pvt Ltd",
-      period: "Oct 2018 – Mar 2019",
+      title: "Trainee",
+      company: "Giant Wheel Animation, Bhubaneswar",
+      period: "Mar 2019 - Nov 2019",
+      projects: "Leo Da Vinci, Gobindgarh Fort",
       description: [
-        "Contributed animation to commercial projects, including the Leo Da Vinci TV series.",
-        "Maintained strict visual and animation quality standards across 3D scenes, strengthening attention to detail and consistency in final output."
+        "Trained in character animation techniques focusing on posing, timing, spacing, and performance clarity.",
+        "Assisted senior animators with blocking and polishing scenes.",
+        "Gained experience working within a full animation production pipeline.",
+        "Improved core animation skills through continuous feedback and mentoring."
       ]
     }
   ];
 
   const education = [
-    "Google UI/UX Professional Certificate | Coursera",
     "Diploma in Animation | Dishaapro, Bhubaneswar"
   ];
 
@@ -63,7 +71,7 @@ const Experience = () => {
         </h2>
         
         <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-          Highly empathetic and creative UI/UX Designer focused on crafting digital experiences that are natural, meaningful, and easy to use. Bringing 5.6 years of visual storytelling and animation expertise to UX design.
+          UI/UX and Product Designer transitioning from a professional 3D animation background, with years of experience in motion, storytelling, composition, and timing. I apply this understanding to design intuitive, user-centered products, combining research, interaction design, and visual clarity to solve complex problems meaningfully.
         </p>
 
         <div className="max-w-5xl mx-auto space-y-12">
@@ -155,8 +163,9 @@ const Experience = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="text-2xl font-bold mb-1">{exp.title}</h4>
-                        <p className="text-primary font-semibold mb-2">{exp.company}</p>
-                        <p className="text-sm text-muted-foreground mb-3">{exp.period}</p>
+                        <p className="text-primary font-semibold mb-1">{exp.company}</p>
+                        <p className="text-sm text-muted-foreground mb-1">{exp.period}</p>
+                        {exp.projects && <p className="text-sm text-muted-foreground mb-3"><span className="text-primary">Projects:</span> {exp.projects}</p>}
                         <ul className="space-y-2">
                           {exp.description.map((item, i) => (
                             <li key={i} className="text-muted-foreground leading-relaxed flex gap-2">
