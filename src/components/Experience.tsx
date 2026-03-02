@@ -23,6 +23,30 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "UI/UX Designer Intern",
+      company: "Madeline & Co. (Remote), Bangalore",
+      period: "Jan 2026 - Feb 2026",
+      projects: "",
+      description: [
+        "Assessed the existing platform design to identify usability and interaction issues.",
+        "Simplified complex screens and optimized core user flows.",
+        "Refined UI components and layout systems for improved clarity and structure.",
+        "Collaborated closely with developers to implement and iterate on design updates."
+      ]
+    },
+    {
+      title: "UI/UX Designer Intern",
+      company: "Codalent (Remote), Bangalore",
+      period: "Oct 2025 - Jan 2026",
+      projects: "",
+      description: [
+        "Evaluated existing websites to identify usability gaps and friction points.",
+        "Refined user flows and improved information structure for better navigation clarity.",
+        "Designed wireframes and UI updates aligned with project requirements.",
+        "Worked closely with developers and contributed to select internal projects (IPs) to support implementation and design consistency."
+      ]
+    },
+    {
       title: "Junior 3D Animator",
       company: "Xentrix Studios (Nickelodeon Wing), Bangalore",
       period: "May 2022 - Apr 2024",
