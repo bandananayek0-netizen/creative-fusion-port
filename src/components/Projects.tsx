@@ -86,7 +86,7 @@ const Projects = () => {
             </div>
 
             <Button variant="default" size="lg">
-              <a href="https://www.behance.net/gallery/237837029/EaseOut-Case-Study" target="_blank"> View Case Study <ExternalLink className="ml-2" /></a>
+              <a href="https://www.behance.net/gallery/237837029/EaseOut-Case-Study" target="_blank" className="flex items-center"> <span>View case study</span> <ExternalLink className="ml-2" /></a>
             </Button>
           </div>
         </div>

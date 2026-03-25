@@ -33,7 +33,8 @@ const Hero = () => {
   };
 
   const titleLine1 = "I'm Bandana,";
-  const titleLine2 = "UI/UX and Product Designer";
+  const titleLine2 = "UI/UX & Product";
+  const titleLine3 = "Designer";
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -85,6 +86,21 @@ const Hero = () => {
               </span>
               <span className="text-primary block">
                 {titleLine2.split("").map((char, i) => (
+                  <motion.span
+                    key={i}
+                    custom={i + titleLine1.length}
+                    variants={letterVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="inline-block"
+                    style={{ whiteSpace: char === " " ? "pre" : undefined }}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+              <span className="text-primary block">
+                {titleLine3.split("").map((char, i) => (
                   <motion.span
                     key={i}
                     custom={i + titleLine1.length}
