@@ -6,11 +6,11 @@ const Projects = () => {
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 animate-fade-in">
-          Let's Have a Look at <span className="text-primary">My Work</span>
+          Case studies that matter <span className="text-primary">My Work</span>
         </h2>
         
         <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          Featured projects showcasing my UI/UX design work
+          Each project starts with a real problem. These are the stories of how I solved them.
         </p>
 
         <div className="max-w-5xl mx-auto">
